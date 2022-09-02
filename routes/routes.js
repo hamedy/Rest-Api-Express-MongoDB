@@ -8,7 +8,6 @@ router.post('/post', async (req, res) => {
         name: req.body.name,
         age: req.body.age
     })
-    //test
     try {
         const dataToSave = await data.save();
         res.status(200).json(dataToSave)
